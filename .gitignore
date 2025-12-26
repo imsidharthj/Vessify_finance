@@ -22,3 +22,47 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment files
+.env
+.env.local
+.env.production
+backend/.env
+frontend/.env.local
+
+# Next.js
+frontend/.next/
+frontend/out/
+
+# Build outputs
+dist/
+build/
+*.js.map
+*.d.ts.map
+
+# Prisma
+backend/prisma/*.db
+backend/prisma/*.db-journal
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Test coverage
+coverage/
+
+# Compiled files (backend)
+backend/src/**/*.js
+backend/src/**/*.d.ts
+!backend/jest.config.cjs
